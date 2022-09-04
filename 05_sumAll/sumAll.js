@@ -1,10 +1,18 @@
-const sumAll = function(a,b) {
+const sumAll = function (a, b) {
     let sum = 0;
+    let initial = a;
+    let terminal = b;
+
     if ( a > b ) {
-        let c = a;
-        a = b; b = c;
+        initial = b;
+        terminal = a;
     }
-    for (let i = a; i <= b; i++) {
+
+    // if ( a > b ) {
+    // let c = a;
+    // a = b; b = c;
+    // }
+    for (let i = initial; i <= terminal; i++) {
         sum += i;
     }
     return sum;
