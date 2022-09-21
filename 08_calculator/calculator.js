@@ -21,8 +21,12 @@ const subtract = function (...args) {
   return output;
 };
 
-const sum = function () {
-
+const sum = function (array) {
+  let output = 0;
+  for (let i of array) {
+    output += i;
+  }
+  return output;
 };
 
 const multiply = function (array) {
