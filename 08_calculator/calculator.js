@@ -37,12 +37,18 @@ const multiply = function (array) {
   return output;
 };
 
-const power = function () {
-
+const power = function (a,b) {
+  let output = Math.pow(a,b);
+  return output;
 };
 
-const factorial = function () {
-
+const factorial = function (arg) {
+  if (arg <= 0) return 1;
+  let output = arg;
+  for (let i = arg-1; i > 0; i--) {
+    output *= i; 
+  }
+  return output;
 };
 
 // Do not edit below this line
