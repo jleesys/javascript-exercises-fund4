@@ -1,4 +1,6 @@
 const fibonacci = function(input) {
+    // checks for negative inputs, returning "OOPS" as defined in assignment
+    if ( input < 1) return "OOPS";
     const index = input - 1;
     const fibArray = [];
     for (let i = 0; i <= index ; i++) {
